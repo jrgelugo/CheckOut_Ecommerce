@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CheckOut</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="src/css/checkout.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="src/js/checkout.js" type="text/javascript"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <div class="row header">
+            <h1>encabezado</h1>
+        </div>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10">
+                    <div class="row productsTitle">
+                       <h1>Verifica tus compras</h1>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div> 
+            </div>
+            <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-8">
+                    <div class="row productsContainer">
+                        <div class="row listTitle">
+                            <div class="col-sm-6">
+                                <p>Producto y Detalle</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Precio</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Cantidad</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Total</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row productContainer">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img class="img-responsive" src="src/imgs/product_1.jpg" alt="ASUS ZenPad Z300M-A2-GR">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>ASUS ZenPad Z300M-A2-GR 116GB Negro, Gris - Tablet (Tableta de tamaño
+                                        completo, IEEE 802.11n, Android, Pizarra, Android 6.0, Negro, Gris)
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$3,380.95</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$3,380.95</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row productContainer">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img class="img-responsive" src="src/imgs/product_2.png" alt="Lenovo TAB3 Essential">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Lenovo TAB3 Essential - ZA0R0029US 7" Android Tablet </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$1,495.31</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$1,495.31</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row productContainer">
+                            <div class="col-sm-6">
+                                <div class="row">
+                                    <div class="col-sm-4 image">
+                                        <img class="img-responsive" src="src/imgs/product_3.jpg" alt="Star Wars Figuras de Acción Star Wars">
+                                    </div>
+                                    <div class="col-sm-8">
+                                        <p>Star Wars Figuras de Acción Star Wars Black Series, AT-AT Driver, 6" </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$449.00</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <div class="input-group">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-minus"></span>
+                                      </button>
+                                  </span>
+                                  <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                  <span class="input-group-btn">
+                                      <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                          <span class="glyphicon glyphicon-plus"></span>
+                                      </button>
+                                  </span>
+                                </div>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$449.00</p>
+                            </div>
+                        </div>
+                        
+                        <div class="row" style="margin-right: 8px;">
+                            <div class="col-sm-6">
+                            </div>
+                            <div class="col-sm-2">
+                            </div>
+                            <div class="col-sm-2">
+                                <p>Total:</p>
+                            </div>
+                            <div class="col-sm-2">
+                                <p>$8,706.21</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class="col-sm-2">
+                    <div class="row paymentContainer">
+                       <h1>contenedor de pago</h1>
+                    </div>
+                </div>
+                <div class="col-sm-1"></div> 
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="row">
+                <h1>pie</h1>
+            </div>
+        </div>
+    </body>
+</html>
