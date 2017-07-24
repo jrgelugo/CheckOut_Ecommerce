@@ -1,4 +1,4 @@
-
+/* funcion que se ejecuta hasta que termina de cargar las etiquetas html */ 
 $(document).ready(function(){
     
 var app = angular.module('product1', []);
@@ -8,7 +8,7 @@ app.controller('Ctrl1', function($scope) {
 });
 
 $("#ini").attr('disabled', false);
-    
+/* input para incremetar o disminuir cantidad de articulos */ 
 $('.btn-number').click(function(e){
     e.preventDefault();
     
@@ -27,7 +27,7 @@ $('.btn-number').click(function(e){
                 var num=input.val();
                 num=num*price;
                 $("#total"+fieldName.replace("quant", "")).text(currency(num.toFixed(2), 2, [',', "'", '.']));
-                
+                /* actualización de los precios según cantidad */ 
                 var gTotal1=$("#total1").text();
                 gTotal1=gTotal1.replace("$", "");
                 gTotal1=gTotal1.replace(",", "");
@@ -55,7 +55,7 @@ $('.btn-number').click(function(e){
                 var num=input.val();
                 num=num*price;
                 $("#total"+fieldName.replace("quant", "")).text(currency(num.toFixed(2), 2, [',', "'", '.']));
-                
+                /* actualización de los precios según cantidad */ 
                 var gTotal1=$("#total1").text();
                 gTotal1=gTotal1.replace("$", "");
                 gTotal1=gTotal1.replace(",", "");
@@ -81,6 +81,7 @@ $('.btn-number').click(function(e){
 $('.input-number').focusin(function(){
    $(this).data('oldValue', $(this).val());
 });
+    /* validacion del rango de productos */ 
 $('.input-number').change(function() {
     
     minValue =  parseInt($(this).attr('min'));
@@ -103,17 +104,17 @@ $('.input-number').change(function() {
     
     
 });
+    /* validacion numericas en los input */ 
 $(".input-number").keydown(function (e) {
-        // Allow: backspace, delete, tab, escape, enter and .
         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
-             // Allow: Ctrl+A
+             
             (e.keyCode == 65 && e.ctrlKey === true) || 
-             // Allow: home, end, left, right
+             
             (e.keyCode >= 35 && e.keyCode <= 39)) {
-                 // let it happen, don't do anything
+                 
                  return;
         }
-        // Ensure that it is a number and stop the keypress
+        
         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
             e.preventDefault();
         }
@@ -121,19 +122,20 @@ $(".input-number").keydown(function (e) {
     
 });
 
-
+/* forma de pago */ 
 function creditCard(){
     if($('input[name=optradio]:checked').val()==1){
-        alert("Estableciendo conexión con Pay Pal para el Pago");
+        alert("Estableciendo conexión con Pay Pal para realizar el pago");
     }
     else if($('input[name=optradio]:checked').val()==2){
         $("#creditCard").modal('show');
     }
     else if($('input[name=optradio]:checked').val()==3){
-        alert("Generando código para pago en Oxxo");
+        alert("Generando código para pagar en Oxxo");
     }
 }
 
+/* validacion de los campos de tarjeta de credito */ 
 function pago(){
     var f = new Date();
     $("#alert").attr("class","alert alert-danger fade out");
@@ -158,6 +160,7 @@ function pago(){
     }
 }
 
+/* funcion para transformar un string en una cadena de moneda */ 
 function currency(value, decimals, separators) {
     decimals = decimals >= 0 ? parseInt(decimals, 0) : 2;
     separators = separators || ['.', "'", ','];
