@@ -7,8 +7,9 @@
 .productsTitle{
     border-bottom: 1.5px #eee solid;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 1px;
     padding-right: 15px;
+    padding-left: 5px;
 }
 
 .listTitle{
@@ -21,11 +22,16 @@
     padding-left: 24px;
 }
 
+.listTitleXs{
+    color: red;
+}
+
 .productsContainer{
     border: 3px #eee solid;
     margin-bottom: 15px;
     margin-top: 15px;
-    margin-right: 15px;
+    margin-right: 3px;
+    margin-left: 5px;
     padding-bottom: 15px;
 }
 
@@ -42,7 +48,6 @@
     border-right: 1.5px #eee solid;
     border-left: 1.5px #eee solid;
     margin-bottom: 15px;
-    margin-right: 15px;
     padding-right: 15px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -77,4 +82,19 @@
 
 .cardElement{
     margin-top: 10px;
+}
+
+h3 i {
+    color: #333;
+    font-style: normal;
+}
+
+i {
+    line-height: 1.5;
+    font-size: 12px;
+}
+
+.busqueda {
+    font-weight: bold;
+    font-size: 13px;
 }
